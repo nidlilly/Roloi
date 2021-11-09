@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#b196e5"
+        android:fontFamily="@font/montserrat"
+        android:paddingVertical="10sp"
+        android:paddingLeft="20sp"
+        android:paddingRight="40sp"
+        android:text="Event Info"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="32sp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:drawableStart="@drawable/ic_title"
+        android:fontFamily="@font/montserrat"
+        android:hint="Title"
+        android:drawablePadding="10sp"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        android:paddingTop="10sp"
+        android:paddingRight="20sp"
+        android:paddingBottom="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/etLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="28sp"
+        android:layout_marginEnd="32sp"
+        android:background="@drawable/edit_text_border"
+        android:drawableStart="@drawable/ic_location"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Location"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        android:paddingTop="10sp"
+        android:drawablePadding="10sp"
+        android:paddingRight="20sp"
+        android:paddingBottom="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTitle" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="31sp"
+        android:layout_marginEnd="32sp"
+        android:background="@drawable/edit_text_border"
+        android:drawableStart="@drawable/ic_description"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Description"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        android:drawablePadding="10sp"
+        android:paddingTop="10sp"
+        android:paddingRight="20sp"
+        android:paddingBottom="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLocation" />
+
+    <EditText
+        android:id="@+id/chooseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="31sp"
+        android:layout_marginEnd="32sp"
+        android:background="@drawable/edit_text_border"
+        android:drawableStart="@drawable/ic_baseline_date_range_24"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:hint="Select Date"
+        android:paddingLeft="10sp"
+        android:paddingTop="10sp"
+        android:paddingRight="20sp"
+
+        android:paddingBottom="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDescription" />
+
+
+    <EditText
+        android:id="@+id/etChooseTime"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="31sp"
+        android:layout_marginEnd="300dp"
+        android:background="@drawable/edit_text_border"
+        android:drawablePadding="10sp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat"
+        android:hint="Start Time"
+        android:paddingLeft="10sp"
+        android:paddingTop="10sp"
+
+        android:paddingRight="20sp"
+        android:paddingBottom="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/etChooseEndTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseDate" />
+
+    <EditText
+        android:id="@+id/etChooseEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="31sp"
+        android:layout_marginEnd="32sp"
+        android:background="@drawable/edit_text_border"
+        android:drawablePadding="10sp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat"
+        android:hint="End Time"
+        android:paddingLeft="10sp"
+        android:paddingTop="10sp"
+
+        android:paddingRight="20sp"
+        android:paddingBottom="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etChooseTime"
+        app:layout_constraintTop_toBottomOf="@+id/chooseDate" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="125sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36sp"
+        android:backgroundTint="#6e52b5"
+
+        android:fontFamily="@font/montserrat"
+        android:text="Add Event"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etChooseTime" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="125sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73sp"
+        android:layout_marginTop="36sp"
+
+        android:layout_marginEnd="50sp"
+        android:backgroundTint="#6e52b5"
+        android:fontFamily="@font/montserrat"
+        android:text="Cancel"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/etChooseEndTime" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="78dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#b196e5"
+        app:layout_constraintBottom_toTopOf="@+id/etTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/newsmallcircle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

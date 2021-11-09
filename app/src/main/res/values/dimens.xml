@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_view_height">70sp</dimen>
+    <dimen name="itemheight">37.2sp</dimen>
+    <dimen name="pluseightdp">8sp</dimen>
+    <dimen name="fourdp">4sp</dimen>
+    <dimen name="onedp">4sp</dimen>
+
+    <dimen name="minuseightdp">-8sp</dimen>
+    <dimen name="circlesize">11sp</dimen>
+    <dimen name="todaysize">17sp</dimen>
+    <dimen name="tendp">20sp</dimen>
+    <dimen name="monthtopspace">17sp</dimen>
+</resources>

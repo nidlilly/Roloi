@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:orderInCategory="300"
+        android:iconTint="#444444"
+        android:title="Restart"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/calendar_icon"
+        android:orderInCategory="100"
+        android:iconTint="#444444"
+        android:title="Current Day"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/action_schedule"
+        android:icon="@drawable/add_icon"
+        android:orderInCategory="100"
+        android:title="Schedule"
+        app:showAsAction="always" />
+</menu>

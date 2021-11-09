@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6e52b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#6e52b5</color>
+    <color name="navcolor">#f1f3f5</color>
+    <color name="navcolor1">#80F1F3F5</color>
+    <color name="lightblack">#787878</color>
+    <color name="unselectday">#787878</color>
+    <color name="selectday">#6e52b5</color>
+    <color name="menucolor">#ded5ef</color>
+    <color name="event_color_01">#6e52b5</color>
+    <color name="event_color_02">#6e52b5</color>
+    <color name="event_color_03">#6e52b5</color>
+    <color name="event_color_04">#6e52b5</color>
+</resources>
